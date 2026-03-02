@@ -14,7 +14,7 @@ function HrDashboard() {
   const [timeOut, setTimeOut] = useState("");
   const [updateMessage, setUpdateMessage] = useState("");
 
-  const [selectedImage, setSelectedImage] = useState(null); // 🔥 Image Modal
+  const [selectedImage, setSelectedImage] = useState(null); 
 
   
   const fetchVisitors = async () => {
@@ -83,7 +83,7 @@ function HrDashboard() {
 
   return (
     <div style={{ padding: "40px" }}>
-      {/* HEADER */}
+     
       <div style={styles.headerContainer}>
         <h2 style={styles.header}>HR Dashboard</h2>
         <button onClick={handleLogout} style={styles.logoutButton}>

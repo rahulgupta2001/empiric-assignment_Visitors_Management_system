@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +18,8 @@ function Login() {
       });
 
       const role = res.data.role;
-     
+   
+      localStorage.setItem('userRole', role); 
 
       if (role === "Admin") navigate("/admin");
       else if (role === "Security") navigate("/security");
@@ -140,3 +140,4 @@ const styles = {
 };
 
 export default Login;
+
