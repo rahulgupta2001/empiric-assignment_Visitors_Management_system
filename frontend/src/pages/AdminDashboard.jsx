@@ -10,6 +10,7 @@ function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("role");
 
   const handleLogout = () => {
+     localStorage.removeItem('userRole');
     navigate("/");
   };
 

@@ -69,6 +69,7 @@ function ManagerDashboard() {
   };
 
   const handleLogout = () => {
+     localStorage.removeItem('userRole');
     navigate("/");
   };
 

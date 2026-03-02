@@ -70,6 +70,7 @@ function HrDashboard() {
   };
 
   const handleLogout = () => {
+     localStorage.removeItem('userRole');
     navigate("/");
   };
 

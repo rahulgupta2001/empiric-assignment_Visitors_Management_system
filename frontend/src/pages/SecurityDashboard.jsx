@@ -128,6 +128,7 @@ function SecurityDashboard() {
   };
 
   const handleLogout = () => {
+     localStorage.removeItem('userRole');
     navigate('/'); 
   };
 
